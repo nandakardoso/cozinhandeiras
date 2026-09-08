@@ -1,26 +1,62 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-chocolate: #253d5b;
+  --color-terracotta: #c94e6b;
+  --color-champagne: #d38530;
+  --color-creme: #fff6e4;
+  --color-offwhite: #fffdf9;
+  --color-olive: #909c4a;
+  --color-gold: #d38530;
+  --color-graphite: #253d5b;
+
+  --background: var(--color-offwhite);
+  --foreground: var(--color-graphite);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-chocolate: var(--color-chocolate);
+  --color-terracotta: var(--color-terracotta);
+  --color-champagne: var(--color-champagne);
+  --color-creme: var(--color-creme);
+  --color-offwhite: var(--color-offwhite);
+  --color-olive: var(--color-olive);
+  --color-gold: var(--color-gold);
+  --color-graphite: var(--color-graphite);
+
+  --font-heading: var(--font-playfair);
+  --font-body: var(--font-inter);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+h1, h2, h3, h4,
+.font-heading {
+  font-family: var(--font-heading), Georgia, serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }

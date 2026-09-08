@@ -1,0 +1,67 @@
+import { brand } from "@/lib/content";
+import { SocialLink } from "@/components/SocialLink";
+
+export function Footer() {
+  return (
+    <footer className="border-t border-[color:var(--color-chocolate)]/10 bg-[color:var(--color-chocolate)] text-[color:var(--color-offwhite)]">
+      <div className="mx-auto grid w-full max-w-6xl gap-10 px-6 py-14 sm:px-8 md:grid-cols-3">
+        <div>
+          <p className="font-heading text-xl">{brand.name}</p>
+          <p className="mt-2 text-sm text-[color:var(--color-offwhite)]/70">
+            {brand.tagline} — {brand.positioning}
+          </p>
+        </div>
+
+        <div>
+          <p className="text-xs font-medium uppercase tracking-[0.2em] text-[color:var(--color-champagne)]">
+            Navegação
+          </p>
+          <ul className="mt-4 space-y-2 text-sm text-[color:var(--color-offwhite)]/80">
+            <li><a href="#quem-somos" className="hover:text-[color:var(--color-champagne)]">Quem somos</a></li>
+            <li><a href="#servicos" className="hover:text-[color:var(--color-champagne)]">Serviços</a></li>
+            <li><a href="#cases" className="hover:text-[color:var(--color-champagne)]">Cases</a></li>
+            <li><a href="#galeria" className="hover:text-[color:var(--color-champagne)]">Galeria</a></li>
+            <li><a href="#contato" className="hover:text-[color:var(--color-champagne)]">Contato</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="text-xs font-medium uppercase tracking-[0.2em] text-[color:var(--color-champagne)]">
+            Contato
+          </p>
+          <p className="mt-4 text-sm text-[color:var(--color-offwhite)]/80">
+            Atendimento em {brand.region}
+          </p>
+          <p className="mt-1 text-sm text-[color:var(--color-offwhite)]/80">
+            WhatsApp: {brand.whatsappNumber}
+          </p>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <SocialLink
+              href={brand.instagramUrl}
+              network="instagram"
+              className="!border-[color:var(--color-offwhite)]/30 !text-[color:var(--color-offwhite)] hover:!bg-[color:var(--color-offwhite)]/10"
+            >
+              Instagram
+            </SocialLink>
+            <SocialLink
+              href={brand.linkedinUrl}
+              network="linkedin"
+              className="!border-[color:var(--color-offwhite)]/30 !text-[color:var(--color-offwhite)] hover:!bg-[color:var(--color-offwhite)]/10"
+            >
+              LinkedIn
+            </SocialLink>
+          </div>
+        </div>
+      </div>
+
+      <div className="border-t border-[color:var(--color-offwhite)]/10 px-6 py-6 text-xs text-[color:var(--color-offwhite)]/60 sm:px-8">
+        <div className="mx-auto flex w-full max-w-6xl flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <p>© {new Date().getFullYear()} {brand.name}. Todos os direitos reservados.</p>
+          <a href="/politica-de-privacidade" className="hover:text-[color:var(--color-champagne)]">
+            Política de privacidade
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
+}

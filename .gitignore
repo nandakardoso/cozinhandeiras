@@ -36,6 +36,12 @@ yarn-error.log*
 # vercel
 .vercel
 
+# leads persistidos localmente quando DATABASE_URL não está configurada
+/data/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# documentos de negócio pesados (mantidos localmente, não versionados)
+*.pdf
