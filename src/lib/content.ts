@@ -32,7 +32,7 @@ export const hero = {
 };
 
 export const about = {
-  eyebrow: "Quem é a Cozinhandeiras",
+  eyebrow: "História do Cozinhandeiras",
   title: "Muito mais do que servir. Criamos experiências.",
   body: "Há 6 anos no mercado, a Cozinhandeiras é especializada no planejamento e na operação de catering para empresas. Sob a liderança de Patricia Kowalewski, com mais de 20 anos de experiência no segmento de eventos, unimos gastronomia, excelência, gestão estratégica e cuidado para transformar cada encontro em uma experiência memorável.",
   stats: [
