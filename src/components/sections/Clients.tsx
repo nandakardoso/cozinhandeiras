@@ -5,15 +5,15 @@ import { Reveal } from "@/components/ui/Reveal";
 
 export function Clients() {
   return (
-    <section className="bg-[color:var(--color-creme)] py-20 sm:py-24">
+    <section className="bg-[color:var(--color-creme)] py-12 sm:py-16">
       <Container>
         <Reveal>
-          <SectionHeading title="Empresas que confiam na nossa excelência." align="center" />
+          <SectionHeading title="Empresas que confiam na nossa excelência." align="left" />
         </Reveal>
       </Container>
 
       <Reveal delay={0.1}>
-        <div className="group relative mt-12 overflow-hidden border-y border-[color:var(--color-chocolate)]/10 bg-[color:var(--color-offwhite)]/60 py-8 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+        <div className="group relative mt-8 overflow-hidden border-y border-[color:var(--color-chocolate)]/10 bg-[color:var(--color-offwhite)]/60 py-4 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
           <ul className="flex w-max animate-marquee items-center gap-16 group-hover:[animation-play-state:paused]">
             {[...clients, ...clients].map((client, i) => (
               <li
