@@ -12,14 +12,17 @@ export function Hero() {
     <section id="topo" className="relative overflow-hidden pt-16 pb-20 sm:pt-24 sm:pb-28">
       <Container className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
         <Reveal>
-          <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-[color:var(--color-terracotta)]">
-            {hero.eyebrow} · {brand.region}
+          <p className="mb-4 text-sm text-[color:var(--color-graphite)]/60">
+            gerando deliciosas lembranças
           </p>
           <h1 className="font-heading text-4xl leading-[1.1] text-[color:var(--color-chocolate)] sm:text-5xl lg:text-6xl">
             {hero.headline}
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-[color:var(--color-graphite)]/85">
             {hero.subheadline}
+          </p>
+          <p className="mt-3 text-sm text-[color:var(--color-graphite)]/60">
+            Catering e filmagens · {brand.region}
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">

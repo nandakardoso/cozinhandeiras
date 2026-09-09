@@ -10,7 +10,6 @@ import { Button } from "@/components/ui/Button";
 const navItems = [
   { href: "#quem-somos", label: "Quem somos" },
   { href: "#servicos", label: "Serviços" },
-  { href: "#cases", label: "Cases" },
   { href: "#galeria", label: "Galeria" },
   { href: "#contato", label: "Contato" },
 ];

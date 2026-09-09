@@ -6,9 +6,11 @@ export function Footer() {
     <footer className="border-t border-[color:var(--color-chocolate)]/10 bg-[color:var(--color-chocolate)] text-[color:var(--color-offwhite)]">
       <div className="mx-auto grid w-full max-w-6xl gap-10 px-6 py-14 sm:px-8 md:grid-cols-3">
         <div>
-          <p className="font-heading text-xl">{brand.name}</p>
+          <p className="font-heading text-xl">
+            {brand.name} - {brand.tagline}
+          </p>
           <p className="mt-2 text-sm text-[color:var(--color-offwhite)]/70">
-            {brand.tagline} — {brand.positioning}
+            {brand.positioning}
           </p>
         </div>
 
@@ -19,7 +21,6 @@ export function Footer() {
           <ul className="mt-4 space-y-2 text-sm text-[color:var(--color-offwhite)]/80">
             <li><a href="#quem-somos" className="hover:text-[color:var(--color-champagne)]">Quem somos</a></li>
             <li><a href="#servicos" className="hover:text-[color:var(--color-champagne)]">Serviços</a></li>
-            <li><a href="#cases" className="hover:text-[color:var(--color-champagne)]">Cases</a></li>
             <li><a href="#galeria" className="hover:text-[color:var(--color-champagne)]">Galeria</a></li>
             <li><a href="#contato" className="hover:text-[color:var(--color-champagne)]">Contato</a></li>
           </ul>

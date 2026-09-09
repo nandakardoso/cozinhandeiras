@@ -41,7 +41,9 @@ export function Testimonials() {
                 <p className="mt-5 font-heading text-sm text-[color:var(--color-chocolate)]">
                   {t.name}
                 </p>
-                <p className="text-xs text-[color:var(--color-graphite)]/60">{t.role}</p>
+                {t.role && (
+                  <p className="text-xs text-[color:var(--color-graphite)]/60">{t.role}</p>
+                )}
               </div>
             </Reveal>
           ))}
