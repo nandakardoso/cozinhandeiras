@@ -24,7 +24,14 @@ export function About() {
             {about.title}
           </h2>
           <p className="mt-6 text-base leading-relaxed text-[color:var(--color-graphite)]/85">
-            {about.body}
+            {about.body.split(about.leaderName).map((part, i, arr) => (
+              <span key={i}>
+                {part}
+                {i < arr.length - 1 && (
+                  <strong className="font-semibold">{about.leaderName}</strong>
+                )}
+              </span>
+            ))}
           </p>
 
           <p className="mt-6 text-sm font-medium text-[color:var(--color-chocolate)]">
