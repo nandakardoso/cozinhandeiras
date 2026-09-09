@@ -5,6 +5,12 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
 import { Reveal } from "@/components/ui/Reveal";
 
+const avatarBorderColors = [
+  "border-[color:var(--color-gold)]",
+  "border-[color:var(--color-olive)]",
+  "border-[color:var(--color-terracotta)]",
+];
+
 export function Testimonials() {
   return (
     <section className="bg-[color:var(--color-creme)] py-20 sm:py-28">
@@ -21,7 +27,7 @@ export function Testimonials() {
                   label={t.imageAlt}
                   src={t.image}
                   ratio="aspect-square"
-                  className="w-20 rounded-full"
+                  className={`w-20 rounded-full border-4 ${avatarBorderColors[i % avatarBorderColors.length]}`}
                   sizes="80px"
                 />
                 <div className="mt-4 flex gap-1 text-[color:var(--color-gold)]" aria-hidden="true">
