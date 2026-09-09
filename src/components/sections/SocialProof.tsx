@@ -21,10 +21,10 @@ export function SocialProof() {
               alt={brand.name}
               width={770}
               height={1066}
-              className="h-24 w-auto shrink-0 sm:h-32"
+              className="h-28 w-auto shrink-0 sm:h-40"
             />
 
-            <div className="flex flex-wrap items-center justify-center gap-3 sm:justify-end">
+            <div className="flex flex-wrap items-center justify-center gap-4 sm:justify-end">
               <SocialLink href={brand.instagramUrl} network="instagram">
                 <InstagramIcon size={18} />
                 Instagram
