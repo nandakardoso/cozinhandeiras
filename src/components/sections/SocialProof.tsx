@@ -24,9 +24,9 @@ export function SocialProof() {
             <Image
               src="/logo-cozinhandeiras.png"
               alt={brand.name}
-              width={1254}
-              height={1254}
-              className="h-16 w-auto sm:h-20"
+              width={770}
+              height={1066}
+              className="h-20 w-auto sm:h-24"
             />
 
             <div className="flex flex-wrap items-center justify-center gap-3">

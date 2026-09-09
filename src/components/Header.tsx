@@ -25,10 +25,10 @@ export function Header() {
           <Image
             src="/logo-cozinhandeiras.png"
             alt={brand.name}
-            width={1254}
-            height={1254}
+            width={770}
+            height={1066}
             priority
-            className="h-14 w-auto sm:h-16"
+            className="h-16 w-auto sm:h-20"
           />
         </a>
 

@@ -10,20 +10,22 @@ export function Clients() {
         <Reveal>
           <SectionHeading title="Empresas que confiam na nossa excelência." align="center" />
         </Reveal>
+      </Container>
 
-        <Reveal delay={0.1}>
-          <ul className="mt-12 flex flex-wrap justify-center gap-3">
-            {clients.map((client) => (
+      <Reveal delay={0.1}>
+        <div className="group relative mt-12 overflow-hidden border-y border-[color:var(--color-chocolate)]/10 bg-[color:var(--color-offwhite)]/60 py-8 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+          <ul className="flex w-max animate-marquee items-center gap-16 group-hover:[animation-play-state:paused]">
+            {[...clients, ...clients].map((client, i) => (
               <li
-                key={client}
-                className="rounded-full border border-[color:var(--color-chocolate)]/15 bg-[color:var(--color-offwhite)] px-5 py-2 font-heading text-sm text-[color:var(--color-chocolate)]/85"
+                key={`${client}-${i}`}
+                className="whitespace-nowrap font-heading text-xl text-[color:var(--color-chocolate)]/50 transition-colors hover:text-[color:var(--color-chocolate)]"
               >
                 {client}
               </li>
             ))}
           </ul>
-        </Reveal>
-      </Container>
+        </div>
+      </Reveal>
     </section>
   );
 }

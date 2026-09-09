@@ -45,3 +45,6 @@ next-env.d.ts
 
 # documentos de negócio pesados (mantidos localmente, não versionados)
 *.pdf
+
+.vercel
+.env*
