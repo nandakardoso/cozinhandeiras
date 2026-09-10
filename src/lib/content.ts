@@ -236,11 +236,6 @@ export const galleryItems: GalleryItem[] = [
     image: "/images/gallery/mini-burgers-coquetel.jpg",
   },
   {
-    id: "g11",
-    imageAlt: "Mini quiches dourados servidos em travessa de cristal",
-    image: "/images/gallery/quiches-coffee-break.jpg",
-  },
-  {
     id: "g12",
     imageAlt: "Mesa de buffet com arranjo floral em evento corporativo com convidados",
     image: "/images/gallery/evento-coquetel.jpg",
@@ -279,6 +274,11 @@ export const galleryItems: GalleryItem[] = [
     id: "g19",
     imageAlt: "Mesa completa de buffet com sucos naturais e dispensers de água aromatizada",
     image: "/images/gallery/mesa-sucos-bebidas.jpg",
+  },
+  {
+    id: "g11",
+    imageAlt: "Mini quiches dourados servidos em travessa de cristal",
+    image: "/images/gallery/quiches-coffee-break.jpg",
   },
   {
     id: "g20",
