@@ -20,9 +20,9 @@ export default function Home() {
         <About />
         <Services />
         <Differentiators />
-        <Clients />
         <Gallery />
         <Testimonials />
+        <Clients />
         <SocialProof />
         <LeadForm />
       </main>
