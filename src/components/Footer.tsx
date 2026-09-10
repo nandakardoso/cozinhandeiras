@@ -1,5 +1,6 @@
 "use client";
 
+import { MessageCircle } from "lucide-react";
 import { brand } from "@/lib/content";
 import { SocialLink } from "@/components/SocialLink";
 import { whatsappHref } from "@/lib/whatsapp";
@@ -37,6 +38,9 @@ export function Footer() {
           <p className="mt-4 text-sm text-[color:var(--color-offwhite)]/80">
             Atendimento em {brand.region}
           </p>
+          <p className="mt-1 text-sm text-[color:var(--color-offwhite)]/80">
+            WhatsApp: {brand.whatsappNumber}
+          </p>
           <div className="mt-4 flex flex-wrap gap-3">
             <SocialLink
               href={whatsappHref}
@@ -44,7 +48,8 @@ export function Footer() {
               onClick={() => track.clickWhatsapp("footer")}
               className="!border-[color:var(--color-offwhite)]/30 !text-[color:var(--color-offwhite)] hover:!bg-[color:var(--color-offwhite)]/10"
             >
-              WhatsApp: {brand.whatsappNumber}
+              <MessageCircle size={16} />
+              WhatsApp
             </SocialLink>
             <SocialLink
               href={brand.instagramUrl}
