@@ -189,7 +189,6 @@ export const galleryCategories = [
   "Coffee Break",
   "Mesas",
   "Coquetéis",
-  "Eventos",
 ] as const;
 
 export type GalleryCategory = (typeof galleryCategories)[number];
@@ -204,7 +203,7 @@ export type GalleryItem = {
 export const galleryItems: GalleryItem[] = [
   {
     id: "g1",
-    category: "Eventos",
+    category: "Coquetéis",
     imageAlt: "Mesa de buffet com arranjo floral em evento corporativo com convidados",
     image: "/images/gallery/evento-coquetel.jpg",
   },
