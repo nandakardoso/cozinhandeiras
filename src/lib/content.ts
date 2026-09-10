@@ -231,11 +231,6 @@ export const galleryItems: GalleryItem[] = [
     image: "/images/gallery/folhados-queijo.jpg",
   },
   {
-    id: "g9",
-    imageAlt: "Mesa posta com prato, guardanapo, taças de cristal e vela em evento corporativo",
-    image: "/images/gallery/mesa-posta-detalhe.jpg",
-  },
-  {
     id: "g10",
     imageAlt: "Mini burgers artesanais com espeto colorido servidos em tábua de madeira",
     image: "/images/gallery/mini-burgers-coquetel.jpg",
@@ -284,6 +279,11 @@ export const galleryItems: GalleryItem[] = [
     id: "g19",
     imageAlt: "Mesa completa de buffet com sucos naturais e dispensers de água aromatizada",
     image: "/images/gallery/mesa-sucos-bebidas.jpg",
+  },
+  {
+    id: "g20",
+    imageAlt: "Mesa posta com prato, guardanapo, taças de cristal e vela em evento corporativo",
+    image: "/images/gallery/mesa-posta-detalhe.jpg",
   },
 ];
 
