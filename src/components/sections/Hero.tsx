@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowRight } from "lucide-react";
-import { hero, brand } from "@/lib/content";
+import { hero } from "@/lib/content";
 import { track } from "@/lib/tracking";
 import { Container } from "@/components/ui/Container";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
@@ -21,10 +21,6 @@ export function Hero() {
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-[color:var(--color-graphite)]/85">
             {hero.subheadline}
           </p>
-          <p className="mt-3 text-sm text-[color:var(--color-graphite)]/60">
-            Catering e filmagens · {brand.region}
-          </p>
-
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="#contato"
