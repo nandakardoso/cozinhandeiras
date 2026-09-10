@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --color-chocolate: #4a2c1f;
+  --color-chocolate: #253d5b;
   --color-terracotta: #c94e6b;
   --color-champagne: #d38530;
   --color-creme: #fff6e4;
   --color-offwhite: #fffdf9;
   --color-olive: #909c4a;
   --color-gold: #d38530;
-  --color-graphite: #3a2f2a;
+  --color-graphite: #253d5b;
 
   --background: var(--color-offwhite);
   --foreground: var(--color-graphite);
