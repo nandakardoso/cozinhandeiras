@@ -55,8 +55,8 @@ export function Gallery() {
         <Reveal>
           <SectionHeading
             eyebrow="Galeria"
-            title="Fotos reais dos nossos eventos"
-            description="Todas as imagens desta galeria são registros reais da Cozinhandeiras em eventos corporativos."
+            title="Cada detalhe pensado para o seu evento"
+            description="Do buffet à decoração, cuidamos de cada escolha para criar uma experiência única, saborosa e especial."
           />
         </Reveal>
 

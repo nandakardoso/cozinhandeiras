@@ -192,38 +192,98 @@ export type GalleryItem = {
 export const galleryItems: GalleryItem[] = [
   {
     id: "g1",
-    imageAlt: "Mesa de buffet com arranjo floral em evento corporativo com convidados",
-    image: "/images/gallery/evento-coquetel.jpg",
+    imageAlt: "Copos de frutas frescas variadas em mesa de evento corporativo",
+    image: "/images/gallery/copos-frutas-frescas.jpg",
   },
   {
     id: "g2",
+    imageAlt: "Doces de chocolate e mousse em copinhos com chantilly",
+    image: "/images/gallery/doces-chocolate-mousse.jpg",
+  },
+  {
+    id: "g3",
+    imageAlt: "Bruschettas com tomate confit e alecrim em travessa dourada",
+    image: "/images/gallery/bruschetta-tomate-confit.jpg",
+  },
+  {
+    id: "g4",
+    imageAlt: "Espetinhos coloridos de frutas frescas servidos em cesta",
+    image: "/images/gallery/espetinhos-frutas-coloridos.jpg",
+  },
+  {
+    id: "g5",
+    imageAlt: "Pães de queijo servidos em cestas de vidro e cristal",
+    image: "/images/gallery/pao-de-queijo-cesta.jpg",
+  },
+  {
+    id: "g6",
+    imageAlt: "Mini burgers de frango com palito decorativo em tábua de madeira",
+    image: "/images/gallery/mini-burgers-frango.jpg",
+  },
+  {
+    id: "g7",
+    imageAlt: "Croissants recheados servidos em travessa de madeira",
+    image: "/images/gallery/croissants-recheados.jpg",
+  },
+  {
+    id: "g8",
+    imageAlt: "Folhados de queijo servidos em travessa azul",
+    image: "/images/gallery/folhados-queijo.jpg",
+  },
+  {
+    id: "g9",
+    imageAlt: "Mesa posta com prato, guardanapo, taças de cristal e vela em evento corporativo",
+    image: "/images/gallery/mesa-posta-detalhe.jpg",
+  },
+  {
+    id: "g10",
     imageAlt: "Mini burgers artesanais com espeto colorido servidos em tábua de madeira",
     image: "/images/gallery/mini-burgers-coquetel.jpg",
   },
   {
-    id: "g3",
-    imageAlt: "Mesa completa de buffet com salgados, tortinhas, frutas e arranjo floral",
-    image: "/images/gallery/mesa-buffet-completa.jpg",
-  },
-  {
-    id: "g4",
+    id: "g11",
     imageAlt: "Mini quiches dourados servidos em travessa de cristal",
     image: "/images/gallery/quiches-coffee-break.jpg",
   },
   {
-    id: "g5",
+    id: "g12",
+    imageAlt: "Mesa de buffet com arranjo floral em evento corporativo com convidados",
+    image: "/images/gallery/evento-coquetel.jpg",
+  },
+  {
+    id: "g13",
     imageAlt: "Mesa com bolo de fubá fatiado, brownies, uvas e taça de frutas em evento corporativo",
     image: "/images/gallery/buffet-doces-frutas.png",
   },
   {
-    id: "g6",
+    id: "g14",
     imageAlt: "Sanduíches naturais, coxinhas, pão de queijo e mini burgers servidos em bandejas de fibra",
     image: "/images/gallery/buffet-sanduiches-salgados.png",
   },
   {
-    id: "g7",
-    imageAlt: "Mesa posta com prato, guardanapo, taças de cristal e vela em evento corporativo",
-    image: "/images/gallery/mesa-posta-detalhe.jpg",
+    id: "g15",
+    imageAlt: "Taças de salada de tomate confit em mesa de evento com flores rosa",
+    image: "/images/gallery/taca-tomate-confit.jpg",
+  },
+  {
+    id: "g16",
+    imageAlt: "Mesa completa de buffet com flores rosa, mini burgers, tortinhas e docinhos",
+    image: "/images/gallery/mesa-flores-rosa-completa.jpg",
+  },
+  {
+    id: "g17",
+    imageAlt: "Mesa de buffet com flores rosa, mini burgers, frutas e pão de queijo em detalhe",
+    image: "/images/gallery/mesa-flores-rosa-detalhe.jpg",
+  },
+  {
+    id: "g18",
+    imageAlt: "Mesa com arranjo de girassóis, tábua de frios e guacamole",
+    image: "/images/gallery/mesa-girassois-charcutaria.jpg",
+  },
+  {
+    id: "g19",
+    imageAlt: "Mesa completa de buffet com sucos naturais e dispensers de água aromatizada",
+    image: "/images/gallery/mesa-sucos-bebidas.jpg",
   },
 ];
 
