@@ -134,7 +134,7 @@ export function Gallery() {
           </button>
 
           <div
-            className="relative aspect-[3/4] w-full max-w-md sm:max-w-lg"
+            className="relative aspect-[3/4] max-h-[85vh] w-full max-w-xl sm:max-w-2xl lg:max-w-3xl"
             onClick={(e) => e.stopPropagation()}
           >
             {activeItem.image ? (
@@ -142,7 +142,7 @@ export function Gallery() {
                 src={activeItem.image}
                 alt={activeItem.imageAlt}
                 fill
-                sizes="(min-width: 640px) 32rem, 100vw"
+                sizes="(min-width: 1024px) 48rem, (min-width: 640px) 42rem, 100vw"
                 className="rounded-2xl object-contain"
               />
             ) : (
