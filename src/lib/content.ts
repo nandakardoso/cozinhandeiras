@@ -52,6 +52,7 @@ export type Service = {
   benefit: string;
   description: string;
   imageAlt: string;
+  image?: string;
 };
 
 export const services: Service[] = [
@@ -85,7 +86,8 @@ export const services: Service[] = [
     benefit: "Networking com apresentação impecável.",
     description:
       "Experiências gastronômicas para networking, relacionamento e celebração.",
-    imageAlt: "[INSERIR FOTO REAL — COQUETEL CORPORATIVO]",
+    imageAlt: "Mesa de coquetel corporativo com finger foods e arranjo floral, convidados ao fundo",
+    image: "/images/services/coqueteis-corporativos.png",
   },
   {
     id: "kits-lanche",
@@ -229,6 +231,18 @@ export const galleryItems: GalleryItem[] = [
     category: "Gastronomia",
     imageAlt: "Mesa de doces e frutas com bolo caseiro fatiado e taça de uvas",
     image: "/images/gallery/mesa-doces-frutas.jpg",
+  },
+  {
+    id: "g6",
+    category: "Gastronomia",
+    imageAlt: "Mesa com bolo de fubá fatiado, brownies, uvas e taça de frutas em evento corporativo",
+    image: "/images/gallery/buffet-doces-frutas.png",
+  },
+  {
+    id: "g7",
+    category: "Coffee Break",
+    imageAlt: "Sanduíches naturais, coxinhas, pão de queijo e mini burgers servidos em bandejas de fibra",
+    image: "/images/gallery/buffet-sanduiches-salgados.png",
   },
 ];
 

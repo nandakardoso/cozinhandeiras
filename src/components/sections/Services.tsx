@@ -56,7 +56,7 @@ export function Services() {
               role="tabpanel"
               className="grid gap-8 rounded-3xl bg-[color:var(--color-creme)] p-6 sm:p-10 md:grid-cols-2 md:items-center"
             >
-              <ImagePlaceholder label={active.imageAlt} ratio="aspect-[4/3]" />
+              <ImagePlaceholder label={active.imageAlt} src={active.image} ratio="aspect-[4/3]" />
               <div>
                 <h3 className="font-heading text-2xl text-[color:var(--color-chocolate)]">
                   {active.title}
