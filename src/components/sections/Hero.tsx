@@ -31,7 +31,7 @@ export function Hero() {
               <ArrowRight size={16} />
             </a>
             <a
-              href="#servicos"
+              href="#galeria"
               className="inline-flex items-center justify-center rounded-full border border-[color:var(--color-chocolate)]/30 px-7 py-3.5 text-sm font-medium tracking-wide text-[color:var(--color-chocolate)] transition-colors hover:bg-[color:var(--color-chocolate)]/5"
             >
               {hero.ctaSecondary}

@@ -10,7 +10,7 @@ export const brand = {
   region: "São Paulo e região",
   whatsappNumber: "11 98908-2788",
   whatsappMessage:
-    "Olá! Conheci o Cozinhandeiras pelo site e gostaria de solicitar uma proposta para um evento.",
+    "Olá! Conheci a Cozinhandeiras pelo site e gostaria de solicitar uma proposta para um evento.",
   instagramUrl: "https://www.instagram.com/cozinhandeiraseventos/",
   instagramHandle: "@cozinhandeiraseventos",
   linkedinUrl: "https://www.linkedin.com/company/cozinhandeiras",
@@ -32,7 +32,7 @@ export const hero = {
 };
 
 export const about = {
-  eyebrow: "História do Cozinhandeiras",
+  eyebrow: "História da Cozinhandeiras",
   title: "Muito mais do que servir. Criamos experiências.",
   body: "Há 6 anos no mercado, a Cozinhandeiras é especializada no planejamento e na operação de catering para empresas. Sob a liderança de Patricia Kowalewski, com mais de 20 anos de experiência no segmento de eventos, unimos gastronomia, excelência, gestão estratégica e cuidado para transformar cada encontro em uma experiência memorável.",
   stats: [

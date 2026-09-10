@@ -25,7 +25,6 @@ export function Footer() {
           </p>
           <ul className="mt-4 space-y-2 text-sm text-[color:var(--color-offwhite)]/80">
             <li><a href="#quem-somos" className="hover:text-[color:var(--color-champagne)]">Quem somos</a></li>
-            <li><a href="#servicos" className="hover:text-[color:var(--color-champagne)]">Serviços</a></li>
             <li><a href="#galeria" className="hover:text-[color:var(--color-champagne)]">Galeria</a></li>
             <li><a href="#contato" className="hover:text-[color:var(--color-champagne)]">Contato</a></li>
           </ul>
