@@ -8,7 +8,11 @@ export function Clients() {
     <section className="bg-[color:var(--color-creme)] py-12 sm:py-16">
       <Container>
         <Reveal>
-          <SectionHeading title="Empresas que confiam na nossa excelência." align="left" />
+          <SectionHeading
+            eyebrow="Clientes"
+            title="Empresas que confiam na nossa excelência."
+            align="left"
+          />
         </Reveal>
       </Container>
 
