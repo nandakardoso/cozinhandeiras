@@ -8,17 +8,19 @@ export function ImagePlaceholder({
   src,
   className = "",
   ratio = "aspect-[4/5]",
+  rounded = "rounded-3xl",
   sizes,
 }: {
   label: string;
   src?: string;
   className?: string;
   ratio?: string;
+  rounded?: string;
   sizes?: string;
 }) {
   if (src) {
     return (
-      <div className={`${ratio} relative overflow-hidden rounded-3xl ${className}`}>
+      <div className={`${ratio} relative overflow-hidden ${rounded} ${className}`}>
         <Image
           src={src}
           alt={label}
@@ -34,7 +36,7 @@ export function ImagePlaceholder({
     <div
       role="img"
       aria-label={label}
-      className={`${ratio} flex items-center justify-center rounded-3xl border border-dashed border-[color:var(--color-chocolate)]/25 bg-[color:var(--color-champagne)]/20 p-6 text-center ${className}`}
+      className={`${ratio} flex items-center justify-center ${rounded} border border-dashed border-[color:var(--color-chocolate)]/25 bg-[color:var(--color-champagne)]/20 p-6 text-center ${className}`}
     >
       <span className="text-xs font-medium uppercase tracking-wide text-[color:var(--color-chocolate)]/60">
         {label}

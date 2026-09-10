@@ -46,89 +46,6 @@ export const about = {
   leaderImage: "/images/patricia-kowalewski.jpg",
 };
 
-export type Service = {
-  id: string;
-  title: string;
-  benefit: string;
-  description: string;
-  imageAlt: string;
-  image?: string;
-};
-
-export const services: Service[] = [
-  {
-    id: "coffee-break",
-    title: "Coffee Breaks & Brunches",
-    benefit: "Energia e cuidado logo na abertura do evento.",
-    description:
-      "Cardápios criativos e apresentações impecáveis para encontros que pedem energia, praticidade e cuidado.",
-    imageAlt: "[INSERIR FOTO REAL — COFFEE BREAK]",
-  },
-  {
-    id: "almocos",
-    title: "Almoços Corporativos",
-    benefit: "Curadoria gastronômica no ritmo da sua empresa.",
-    description:
-      "Refeições completas com curadoria gastronômica e operação adequada ao ritmo da empresa.",
-    imageAlt: "[INSERIR FOTO REAL — ALMOÇO CORPORATIVO]",
-  },
-  {
-    id: "feiras",
-    title: "Catering para Feiras",
-    benefit: "Logística precisa para o seu estande.",
-    description:
-      "Soluções sob medida, logística precisa e atendimento eficaz para estandes e eventos de negócios.",
-    imageAlt: "[INSERIR FOTO REAL — CATERING PARA FEIRAS]",
-  },
-  {
-    id: "coqueteis",
-    title: "Coquetéis & Happy Hours",
-    benefit: "Networking com apresentação impecável.",
-    description:
-      "Experiências gastronômicas para networking, relacionamento e celebração.",
-    imageAlt: "Mesa de coquetel corporativo com finger foods e arranjo floral, convidados ao fundo",
-    image: "/images/services/coqueteis-corporativos.png",
-  },
-  {
-    id: "kits-lanche",
-    title: "Kits Lanches Premium",
-    benefit: "Praticidade sem abrir mão da apresentação.",
-    description:
-      "Soluções práticas e bem apresentadas para pequenos e grandes grupos.",
-    imageAlt: "[INSERIR FOTO REAL — KIT LANCHE]",
-  },
-  {
-    id: "cestas",
-    title: "Cestas de Natal e Presentes Corporativos",
-    benefit: "Encantamento para clientes, parceiros e colaboradores.",
-    description:
-      "Opções especiais para presentear e encantar clientes, parceiros e colaboradores.",
-    imageAlt: "[INSERIR FOTO REAL — CESTAS CORPORATIVAS]",
-  },
-  {
-    id: "buffets-tematicos",
-    title: "Buffets Temáticos",
-    benefit: "Uma solução para cada data comemorativa.",
-    description:
-      "Soluções para Natal, Páscoa, Dia das Mães, Dia dos Pais, Dia das Crianças, Halloween e outras ocasiões.",
-    imageAlt: "[INSERIR FOTO REAL — BUFFET TEMÁTICO]",
-  },
-  {
-    id: "projetos-especiais",
-    title: "Projetos Especiais",
-    benefit: "Um projeto criado do zero para o seu evento.",
-    description:
-      "Seu evento pede algo diferente? Criamos projetos personalizados de gastronomia, ambientação e operação de A&B de acordo com o objetivo, o público e o formato do encontro.",
-    imageAlt: "[INSERIR FOTO REAL — PROJETO ESPECIAL]",
-  },
-];
-
-export const servicesSection = {
-  eyebrow: "Serviços",
-  title: "Soluções de gastronomia e decoração",
-  cta: "Quero planejar meu evento",
-};
-
 export const differentiators = {
   eyebrow: "Diferenciais",
   title: "O cuidado está nos detalhes.",
@@ -284,6 +201,16 @@ export const galleryItems: GalleryItem[] = [
     id: "g20",
     imageAlt: "Mesa posta com prato, guardanapo, taças de cristal e vela em evento corporativo",
     image: "/images/gallery/mesa-posta-detalhe.jpg",
+  },
+  {
+    id: "g21",
+    imageAlt: "Colagem de fotos com frutas, doces, salgados, burgers e croissants de evento corporativo",
+    image: "/images/gallery/colagem-buffet-doces-salgados.jpg",
+  },
+  {
+    id: "g22",
+    imageAlt: "Colagem de fotos com mesa posta, mini burgers, quiches e buffet completo de evento corporativo",
+    image: "/images/gallery/colagem-mesa-posta-buffet.jpg",
   },
 ];
 

@@ -78,6 +78,7 @@ export function Gallery() {
                     label={item.imageAlt}
                     src={item.image}
                     ratio="aspect-[3/4]"
+                    rounded="rounded-2xl"
                     className="w-full"
                   />
                 </button>
