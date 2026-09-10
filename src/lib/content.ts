@@ -183,19 +183,8 @@ export const clients = [
   "BonifiQ",
 ];
 
-export const galleryCategories = [
-  "Todos",
-  "Gastronomia",
-  "Coffee Break",
-  "Mesas",
-  "Coquetéis",
-] as const;
-
-export type GalleryCategory = (typeof galleryCategories)[number];
-
 export type GalleryItem = {
   id: string;
-  category: Exclude<GalleryCategory, "Todos">;
   imageAlt: string;
   image?: string;
 };
@@ -203,45 +192,38 @@ export type GalleryItem = {
 export const galleryItems: GalleryItem[] = [
   {
     id: "g1",
-    category: "Coquetéis",
     imageAlt: "Mesa de buffet com arranjo floral em evento corporativo com convidados",
     image: "/images/gallery/evento-coquetel.jpg",
   },
   {
     id: "g2",
-    category: "Coquetéis",
-    imageAlt: "Mini sanduíches e hambúrgueres artesanais servidos em bandejas de fibra",
-    image: "/images/gallery/buffet-sanduiches-sliders.jpg",
+    imageAlt: "Mini burgers artesanais com espeto colorido servidos em tábua de madeira",
+    image: "/images/gallery/mini-burgers-coquetel.jpg",
   },
   {
     id: "g3",
-    category: "Mesas",
     imageAlt: "Mesa completa de buffet com salgados, tortinhas, frutas e arranjo floral",
     image: "/images/gallery/mesa-buffet-completa.jpg",
   },
   {
     id: "g4",
-    category: "Coffee Break",
-    imageAlt: "Pão de queijo e sanduíches naturais em bandejas para coffee break",
-    image: "/images/gallery/paes-queijo-sanduiches.jpg",
+    imageAlt: "Mini quiches dourados servidos em travessa de cristal",
+    image: "/images/gallery/quiches-coffee-break.jpg",
   },
   {
     id: "g5",
-    category: "Gastronomia",
-    imageAlt: "Mesa de doces e frutas com bolo caseiro fatiado e taça de uvas",
-    image: "/images/gallery/mesa-doces-frutas.jpg",
-  },
-  {
-    id: "g6",
-    category: "Gastronomia",
     imageAlt: "Mesa com bolo de fubá fatiado, brownies, uvas e taça de frutas em evento corporativo",
     image: "/images/gallery/buffet-doces-frutas.png",
   },
   {
-    id: "g7",
-    category: "Coffee Break",
+    id: "g6",
     imageAlt: "Sanduíches naturais, coxinhas, pão de queijo e mini burgers servidos em bandejas de fibra",
     image: "/images/gallery/buffet-sanduiches-salgados.png",
+  },
+  {
+    id: "g7",
+    imageAlt: "Mesa posta com prato, guardanapo, taças de cristal e vela em evento corporativo",
+    image: "/images/gallery/mesa-posta-detalhe.jpg",
   },
 ];
 
