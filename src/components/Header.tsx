@@ -19,7 +19,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-[color:var(--color-chocolate)]/10 bg-[color:var(--color-offwhite)]/90 backdrop-blur">
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4 sm:px-8">
+      <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-2 sm:px-8">
         <a href="#topo" className="flex items-center" aria-label={brand.name}>
           <Image
             src="/logo-cozinhandeiras.png"
@@ -27,7 +27,7 @@ export function Header() {
             width={770}
             height={1066}
             priority
-            className="h-16 w-auto sm:h-20"
+            className="h-20 w-auto sm:h-24"
           />
         </a>
 
@@ -36,7 +36,7 @@ export function Header() {
             <a
               key={item.href}
               href={item.href}
-              className="text-sm text-[color:var(--color-graphite)]/80 transition-colors hover:text-[color:var(--color-terracotta)]"
+              className="text-base text-[color:var(--color-graphite)]/80 transition-colors hover:text-[color:var(--color-terracotta)]"
             >
               {item.label}
             </a>
@@ -49,7 +49,7 @@ export function Header() {
               track.clickBudget("header");
               document.getElementById("contato")?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="text-xs"
+            className="text-sm"
           >
             Solicite seu orçamento
           </Button>
