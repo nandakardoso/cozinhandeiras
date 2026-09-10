@@ -1,5 +1,9 @@
+"use client";
+
 import { brand } from "@/lib/content";
 import { SocialLink } from "@/components/SocialLink";
+import { whatsappHref } from "@/lib/whatsapp";
+import { track } from "@/lib/tracking";
 
 export function Footer() {
   return (
@@ -33,10 +37,15 @@ export function Footer() {
           <p className="mt-4 text-sm text-[color:var(--color-offwhite)]/80">
             Atendimento em {brand.region}
           </p>
-          <p className="mt-1 text-sm text-[color:var(--color-offwhite)]/80">
-            WhatsApp: {brand.whatsappNumber}
-          </p>
           <div className="mt-4 flex flex-wrap gap-3">
+            <SocialLink
+              href={whatsappHref}
+              network="whatsapp"
+              onClick={() => track.clickWhatsapp("footer")}
+              className="!border-[color:var(--color-offwhite)]/30 !text-[color:var(--color-offwhite)] hover:!bg-[color:var(--color-offwhite)]/10"
+            >
+              WhatsApp: {brand.whatsappNumber}
+            </SocialLink>
             <SocialLink
               href={brand.instagramUrl}
               network="instagram"
