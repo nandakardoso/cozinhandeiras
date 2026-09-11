@@ -25,12 +25,10 @@ export const hero = {
   imageAlt: "Patricia Kowalewski em evento corporativo, junto à mesa de buffet",
   image: "/images/hero-patricia.jpg",
   signature: [
-    { label: "6 anos", detail: "de Cozinhandeiras" },
-    { label: "+20 anos", detail: "de experiência em eventos" },
-    { label: "B2B", detail: "foco em eventos corporativos" },
+    { label: "Gastronomia", detail: "que dá sabor aos encontros." },
+    { label: "Decoração", detail: "que transforma ambientes." },
+    { label: "Experiências", detail: "que conectam pessoas." },
   ],
-  trustedByLabel: "Empresas que já confiaram",
-  trustedByClients: ["Capgemini", "Prudential Seguros", "Banco Sicredi"],
 };
 
 export const about = {

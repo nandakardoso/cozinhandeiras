@@ -38,14 +38,7 @@ export function Hero() {
             </a>
           </div>
 
-          <p className="mt-6 text-xs text-[color:var(--color-graphite)]/60">
-            {hero.trustedByLabel}:{" "}
-            <span className="text-[color:var(--color-graphite)]/85">
-              {hero.trustedByClients.join(" · ")}
-            </span>
-          </p>
-
-          <dl className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-3">
+          <dl className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
             {hero.signature.map((item) => (
               <div key={item.label}>
                 <dt className="font-heading text-lg text-[color:var(--color-chocolate)]">
