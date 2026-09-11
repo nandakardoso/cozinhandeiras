@@ -63,7 +63,7 @@ export const differentiators = {
     {
       title: "Operação profissional",
       description:
-        "Planejamento e execução para que o cliente cuide dos convidados — e não dos problemas.",
+        "Planejamento e execução impecáveis para que você aproveite cada momento com seus convidados, enquanto cuidamos de todos os detalhes.",
     },
     {
       title: "Rede especializada",

@@ -40,6 +40,19 @@ export function LeadForm() {
   function updateField<K extends keyof FormState>(key: K, value: FormState[K]) {
     handleFieldStart();
     setValues((prev) => ({ ...prev, [key]: value }));
+    if (errors[key]) {
+      setErrors((prev) => ({ ...prev, [key]: undefined }));
+    }
+  }
+
+  function validateField<K extends keyof FormState>(key: K, value: FormState[K]) {
+    const shape = leadSchema.shape[key];
+    if (!shape) return;
+    const result = shape.safeParse(value);
+    setErrors((prev) => ({
+      ...prev,
+      [key]: result.success ? undefined : result.error.issues[0]?.message,
+    }));
   }
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
@@ -133,6 +146,7 @@ export function LeadForm() {
               autoComplete="name"
               value={values.name}
               onChange={(e) => updateField("name", e.target.value)}
+              onBlur={(e) => validateField("name", e.target.value)}
               className={inputClass(!!errors.name)}
             />
           </Field>
@@ -145,6 +159,7 @@ export function LeadForm() {
               autoComplete="organization"
               value={values.company}
               onChange={(e) => updateField("company", e.target.value)}
+              onBlur={(e) => validateField("company", e.target.value)}
               className={inputClass(!!errors.company)}
             />
           </Field>
@@ -158,6 +173,7 @@ export function LeadForm() {
                 autoComplete="email"
                 value={values.email}
                 onChange={(e) => updateField("email", e.target.value)}
+                onBlur={(e) => validateField("email", e.target.value)}
                 className={inputClass(!!errors.email)}
               />
             </Field>
@@ -171,6 +187,7 @@ export function LeadForm() {
                 placeholder="(11) 90000-0000"
                 value={values.whatsapp}
                 onChange={(e) => updateField("whatsapp", e.target.value)}
+                onBlur={(e) => validateField("whatsapp", e.target.value)}
                 className={inputClass(!!errors.whatsapp)}
               />
             </Field>
@@ -183,6 +200,7 @@ export function LeadForm() {
                 name="service"
                 value={values.service}
                 onChange={(e) => updateField("service", e.target.value as FormState["service"])}
+                onBlur={(e) => validateField("service", e.target.value as FormState["service"])}
                 className={inputClass(!!errors.service)}
               >
                 {serviceOptions.map((opt) => (
@@ -200,6 +218,8 @@ export function LeadForm() {
                 type="date"
                 value={values.eventDate}
                 onChange={(e) => updateField("eventDate", e.target.value)}
+                onBlur={(e) => validateField("eventDate", e.target.value)}
+                min={new Date().toISOString().slice(0, 10)}
                 className={inputClass(!!errors.eventDate)}
               />
             </Field>
@@ -215,6 +235,7 @@ export function LeadForm() {
                 autoComplete="address-level2"
                 value={values.location}
                 onChange={(e) => updateField("location", e.target.value)}
+                onBlur={(e) => validateField("location", e.target.value)}
                 className={inputClass(!!errors.location)}
               />
             </Field>
@@ -225,6 +246,7 @@ export function LeadForm() {
                 name="guestRange"
                 value={values.guestRange}
                 onChange={(e) => updateField("guestRange", e.target.value as FormState["guestRange"])}
+                onBlur={(e) => validateField("guestRange", e.target.value as FormState["guestRange"])}
                 className={inputClass(!!errors.guestRange)}
               >
                 {guestRangeOptions.map((opt) => (
@@ -248,6 +270,7 @@ export function LeadForm() {
               placeholder={leadForm.detailsPlaceholder}
               value={values.details}
               onChange={(e) => updateField("details", e.target.value)}
+              onBlur={(e) => validateField("details", e.target.value)}
               className={inputClass(!!errors.details)}
             />
           </Field>
