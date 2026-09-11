@@ -6,6 +6,7 @@ import { guestRangeOptions, leadForm, serviceOptions } from "@/lib/content";
 import { leadSchema, type LeadInput } from "@/lib/lead-schema";
 import { track } from "@/lib/tracking";
 import { Container } from "@/components/ui/Container";
+import { Eyebrow } from "@/components/ui/Eyebrow";
 
 type FormState = Omit<LeadInput, "website">;
 
@@ -117,9 +118,7 @@ export function LeadForm() {
   return (
     <section id="contato" className="bg-[color:var(--color-creme)] py-20 sm:py-28">
       <Container className="max-w-2xl">
-        <p className="mb-3 text-center text-xs font-medium uppercase tracking-[0.2em] text-[color:var(--color-terracotta)]">
-          {leadForm.eyebrow}
-        </p>
+        <Eyebrow className="mb-3 text-center">{leadForm.eyebrow}</Eyebrow>
         <h2 className="text-center font-heading text-3xl leading-tight text-[color:var(--color-chocolate)] sm:text-4xl">
           {leadForm.title}
         </h2>

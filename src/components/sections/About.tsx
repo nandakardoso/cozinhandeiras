@@ -1,5 +1,6 @@
 import { about } from "@/lib/content";
 import { Container } from "@/components/ui/Container";
+import { Eyebrow } from "@/components/ui/Eyebrow";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
 import { Reveal } from "@/components/ui/Reveal";
 
@@ -17,9 +18,7 @@ export function About() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <p className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-[color:var(--color-terracotta)]">
-            {about.eyebrow}
-          </p>
+          <Eyebrow className="mb-3">{about.eyebrow}</Eyebrow>
           <h2 className="font-heading text-3xl leading-tight text-[color:var(--color-chocolate)] sm:text-4xl">
             {about.title}
           </h2>

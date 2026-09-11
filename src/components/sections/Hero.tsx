@@ -4,7 +4,9 @@ import { ArrowRight } from "lucide-react";
 import { hero } from "@/lib/content";
 import { track } from "@/lib/tracking";
 import { Container } from "@/components/ui/Container";
+import { Eyebrow } from "@/components/ui/Eyebrow";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
+import { LinkButton } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 
 export function Hero() {
@@ -12,9 +14,7 @@ export function Hero() {
     <section id="topo" className="relative overflow-hidden pt-16 pb-20 sm:pt-24 sm:pb-28">
       <Container className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
         <Reveal>
-          <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-[color:var(--color-terracotta)]">
-            gerando deliciosas lembranças
-          </p>
+          <Eyebrow className="mb-4">gerando deliciosas lembranças</Eyebrow>
           <h1 className="font-heading text-4xl leading-[1.1] text-[color:var(--color-chocolate)] sm:text-5xl lg:text-6xl">
             {hero.headline}
           </h1>
@@ -22,20 +22,13 @@ export function Hero() {
             {hero.subheadline}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href="#contato"
-              onClick={() => track.clickBudget("hero")}
-              className="inline-flex items-center gap-2 rounded-full bg-[color:var(--color-chocolate)] px-7 py-3.5 text-sm font-medium tracking-wide text-[color:var(--color-offwhite)] transition-colors hover:bg-[color:var(--color-terracotta)]"
-            >
+            <LinkButton href="#contato" onClick={() => track.clickBudget("hero")}>
               {hero.ctaPrimary}
               <ArrowRight size={16} />
-            </a>
-            <a
-              href="#galeria"
-              className="inline-flex items-center justify-center rounded-full border border-[color:var(--color-chocolate)]/30 px-7 py-3.5 text-sm font-medium tracking-wide text-[color:var(--color-chocolate)] transition-colors hover:bg-[color:var(--color-chocolate)]/5"
-            >
+            </LinkButton>
+            <LinkButton href="#galeria" variant="secondary">
               {hero.ctaSecondary}
-            </a>
+            </LinkButton>
           </div>
 
           <dl className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">

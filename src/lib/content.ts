@@ -272,7 +272,7 @@ export const leadForm = {
   eyebrow: "Vamos conversar sobre o seu evento",
   title: "Conte sobre seu evento",
   subtitle:
-    "Para que a Patricia prepare uma proposta impecável, precisamos de alguns detalhes.",
+    "Compartilhe os detalhes do evento e preparemos uma proposta sob medida.",
   submitLabel: "Quero receber uma proposta",
   successMessage:
     "Obrigada! Recebemos as informações do seu evento. Nossa equipe entrará em contato para entender os detalhes e preparar uma proposta personalizada.",

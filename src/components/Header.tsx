@@ -5,7 +5,7 @@ import Image from "next/image";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { brand } from "@/lib/content";
 import { track } from "@/lib/tracking";
-import { Button } from "@/components/ui/Button";
+import { Button, LinkButton } from "@/components/ui/Button";
 
 const navItems = [
   { href: "#quem-somos", label: "Quem somos" },
@@ -143,9 +143,9 @@ export function Header() {
             </li>
           ))}
           <li className="mt-2">
-            <a
+            <LinkButton
               href="#contato"
-              className="flex items-center justify-center gap-2 rounded-full bg-[color:var(--color-chocolate)] px-6 py-3.5 text-sm font-medium tracking-wide text-[color:var(--color-offwhite)] transition-colors hover:bg-[color:var(--color-terracotta)]"
+              className="w-full"
               onClick={() => {
                 setOpen(false);
                 track.clickBudget("header-mobile");
@@ -153,7 +153,7 @@ export function Header() {
             >
               Solicite seu orçamento
               <ArrowRight size={16} />
-            </a>
+            </LinkButton>
           </li>
         </ul>
       </nav>

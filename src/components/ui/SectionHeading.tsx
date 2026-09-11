@@ -1,3 +1,5 @@
+import { Eyebrow } from "@/components/ui/Eyebrow";
+
 export function SectionHeading({
   eyebrow,
   title,
@@ -13,11 +15,7 @@ export function SectionHeading({
 
   return (
     <div className={`max-w-2xl ${alignClass}`}>
-      {eyebrow && (
-        <p className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-[color:var(--color-terracotta)]">
-          {eyebrow}
-        </p>
-      )}
+      {eyebrow && <Eyebrow className="mb-3">{eyebrow}</Eyebrow>}
       <h2 className="font-heading text-3xl leading-tight text-[color:var(--color-chocolate)] sm:text-4xl">
         {title}
       </h2>

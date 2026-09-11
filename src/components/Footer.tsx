@@ -3,6 +3,7 @@
 import { MessageCircle } from "lucide-react";
 import { brand } from "@/lib/content";
 import { SocialLink } from "@/components/SocialLink";
+import { Eyebrow } from "@/components/ui/Eyebrow";
 import { whatsappHref } from "@/lib/whatsapp";
 import { track } from "@/lib/tracking";
 
@@ -20,9 +21,7 @@ export function Footer() {
         </div>
 
         <div>
-          <p className="text-xs font-medium uppercase tracking-[0.2em] text-[color:var(--color-champagne)]">
-            Navegação
-          </p>
+          <Eyebrow tone="champagne">Navegação</Eyebrow>
           <ul className="mt-4 space-y-2 text-sm text-[color:var(--color-offwhite)]/80">
             <li><a href="#quem-somos" className="hover:text-[color:var(--color-champagne)]">Quem somos</a></li>
             <li><a href="#galeria" className="hover:text-[color:var(--color-champagne)]">Galeria</a></li>
@@ -31,9 +30,7 @@ export function Footer() {
         </div>
 
         <div>
-          <p className="text-xs font-medium uppercase tracking-[0.2em] text-[color:var(--color-champagne)]">
-            Contato
-          </p>
+          <Eyebrow tone="champagne">Contato</Eyebrow>
           <p className="mt-4 text-sm text-[color:var(--color-offwhite)]/80">
             Atendimento em {brand.region}
           </p>
