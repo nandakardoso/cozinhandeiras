@@ -25,10 +25,12 @@ export const hero = {
   imageAlt: "Patricia Kowalewski em evento corporativo, junto à mesa de buffet",
   image: "/images/hero-patricia.jpg",
   signature: [
-    { label: "Gastronomia", detail: "que dá sabor aos encontros." },
-    { label: "Decoração", detail: "que transforma ambientes." },
-    { label: "Experiências", detail: "que conectam pessoas." },
+    { label: "6 anos", detail: "de Cozinhandeiras" },
+    { label: "+20 anos", detail: "de experiência em eventos" },
+    { label: "B2B", detail: "foco em eventos corporativos" },
   ],
+  trustedByLabel: "Empresas que já confiaram",
+  trustedByClients: ["Capgemini", "Prudential Seguros", "Banco Sicredi"],
 };
 
 export const about = {
@@ -108,6 +110,31 @@ export type GalleryItem = {
 
 export const galleryItems: GalleryItem[] = [
   {
+    id: "g16",
+    imageAlt: "Mesa completa de buffet com flores rosa, mini burgers, tortinhas e docinhos",
+    image: "/images/gallery/mesa-flores-rosa-completa.jpg",
+  },
+  {
+    id: "g12",
+    imageAlt: "Mesa de buffet com arranjo floral em evento corporativo com convidados",
+    image: "/images/gallery/evento-coquetel.jpg",
+  },
+  {
+    id: "g15",
+    imageAlt: "Taças de salada de tomate confit em mesa de evento com flores rosa",
+    image: "/images/gallery/taca-tomate-confit.jpg",
+  },
+  {
+    id: "g17",
+    imageAlt: "Mesa de buffet com flores rosa, mini burgers, frutas e pão de queijo em detalhe",
+    image: "/images/gallery/mesa-flores-rosa-detalhe.jpg",
+  },
+  {
+    id: "g18",
+    imageAlt: "Mesa com arranjo de girassóis, tábua de frios e guacamole",
+    image: "/images/gallery/mesa-girassois-charcutaria.jpg",
+  },
+  {
     id: "g1",
     imageAlt: "Copos de frutas frescas variadas em mesa de evento corporativo",
     image: "/images/gallery/copos-frutas-frescas.jpg",
@@ -153,11 +180,6 @@ export const galleryItems: GalleryItem[] = [
     image: "/images/gallery/mini-burgers-coquetel.jpg",
   },
   {
-    id: "g12",
-    imageAlt: "Mesa de buffet com arranjo floral em evento corporativo com convidados",
-    image: "/images/gallery/evento-coquetel.jpg",
-  },
-  {
     id: "g13",
     imageAlt: "Mesa com bolo de fubá fatiado, brownies, uvas e taça de frutas em evento corporativo",
     image: "/images/gallery/buffet-doces-frutas.png",
@@ -166,26 +188,6 @@ export const galleryItems: GalleryItem[] = [
     id: "g14",
     imageAlt: "Sanduíches naturais, coxinhas, pão de queijo e mini burgers servidos em bandejas de fibra",
     image: "/images/gallery/buffet-sanduiches-salgados.png",
-  },
-  {
-    id: "g15",
-    imageAlt: "Taças de salada de tomate confit em mesa de evento com flores rosa",
-    image: "/images/gallery/taca-tomate-confit.jpg",
-  },
-  {
-    id: "g16",
-    imageAlt: "Mesa completa de buffet com flores rosa, mini burgers, tortinhas e docinhos",
-    image: "/images/gallery/mesa-flores-rosa-completa.jpg",
-  },
-  {
-    id: "g17",
-    imageAlt: "Mesa de buffet com flores rosa, mini burgers, frutas e pão de queijo em detalhe",
-    image: "/images/gallery/mesa-flores-rosa-detalhe.jpg",
-  },
-  {
-    id: "g18",
-    imageAlt: "Mesa com arranjo de girassóis, tábua de frios e guacamole",
-    image: "/images/gallery/mesa-girassois-charcutaria.jpg",
   },
   {
     id: "g19",
