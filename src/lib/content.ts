@@ -53,12 +53,12 @@ export const differentiators = {
     {
       title: "Gastronomia + ambientação",
       description:
-        "A experiência não termina no cardápio. A apresentação da mesa faz parte da entrega.",
+        "A experiência vai além do sabor. Cada mesa é pensada para harmonizar gastronomia, apresentação e detalhes que tornam o evento ainda mais especial.",
     },
     {
       title: "Personalização",
       description:
-        "Formato, menu e experiência adaptados ao objetivo e ao perfil de cada evento.",
+        "Cada evento é único. Criamos o formato, o menu e a experiência sob medida para o perfil, o propósito e os detalhes de cada ocasião.",
     },
     {
       title: "Operação profissional",
@@ -68,12 +68,12 @@ export const differentiators = {
     {
       title: "Rede especializada",
       description:
-        "Parceiros selecionados, como bartenders, decoradores, floristas e fornecedores especializados.",
+        "Uma curadoria de parceiros especializados para cuidar de cada detalhe e elevar a experiência do seu evento.",
     },
     {
       title: "Experiência corporativa",
       description:
-        "Entendimento das exigências de empresas, agências, horários, fornecedores e operação.",
+        "Entendemos a dinâmica e as exigências do ambiente corporativo, coordenando prazos, equipes, fornecedores e operação com precisão e agilidade.",
     },
   ],
 };
