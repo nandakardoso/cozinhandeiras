@@ -144,7 +144,7 @@ export function Gallery() {
                 alt={activeItem.imageAlt}
                 fill
                 sizes="(min-width: 1024px) 48rem, (min-width: 640px) 42rem, 100vw"
-                className="object-contain"
+                className="object-cover"
               />
             ) : (
               <div className="flex h-full w-full items-center justify-center border border-dashed border-white/30 p-6 text-center text-sm text-white/70">
