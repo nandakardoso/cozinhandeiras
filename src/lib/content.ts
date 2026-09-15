@@ -160,11 +160,6 @@ export const galleryItems: GalleryItem[] = [
     image: "/images/gallery/espetinhos-frutas-coloridos.jpg",
   },
   {
-    id: "g5",
-    imageAlt: "Pães de queijo servidos em cestas de vidro e cristal",
-    image: "/images/gallery/pao-de-queijo-cesta.jpg",
-  },
-  {
     id: "g6",
     imageAlt: "Mini burgers de frango com palito decorativo em tábua de madeira",
     image: "/images/gallery/mini-burgers-frango.jpg",
