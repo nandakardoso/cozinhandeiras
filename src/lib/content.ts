@@ -257,7 +257,7 @@ export const testimonials: Testimonial[] = [
   {
     name: "Lis Britto",
     quote:
-      "Conheci o Cozinhandeiras e foi amor à primeira experiência. O sabor é incomparável, o atendimento é impecável e a entrega, sempre pontual e profissional. Desde então, o Cozinhandeiras faz parte dos eventos que organizo, atendendo marcas como iFood, Mercado Livre, Deloitte, Totvs, Accor e Alqia. Nunca recebi uma crítica, apenas elogios e pedidos de contato da equipe da Patrícia. O que encanta é o cuidado com os detalhes e o sabor afetivo que remete à casa da gente: aconchego e mesa farta.",
+      "Conheci o Cozinhandeiras e foi amor à primeira experiência. O sabor é incomparável, o atendimento é impecável e a entrega, sempre pontual e profissional. Desde então, o Cozinhandeiras faz parte dos eventos que organizo, atendendo marcas como iFood, Mercado Livre, Deloitte, TOTVS, Accor e Alqia. Nunca recebi uma crítica, apenas elogios e pedidos de contato da equipe da Patrícia. O que encanta é o cuidado com os detalhes e o sabor afetivo que remete à casa da gente: aconchego e mesa farta.",
     imageAlt: "Lis Britto",
     image: "/images/testimonials/lis-britto.png",
   },
@@ -289,7 +289,7 @@ export const leadForm = {
   eyebrow: "Vamos conversar sobre o seu evento",
   title: "Conte sobre seu evento",
   subtitle:
-    "Compartilhe os detalhes do evento e preparemos uma proposta sob medida.",
+    "Compartilhe os detalhes do evento e prepararemos uma proposta sob medida.",
   submitLabel: "Quero receber uma proposta",
   successMessage:
     "Obrigada! Recebemos as informações do seu evento. Nossa equipe entrará em contato para entender os detalhes e preparar uma proposta personalizada.",
