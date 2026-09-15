@@ -135,7 +135,7 @@ export function Gallery() {
           </button>
 
           <div
-            className="relative aspect-[3/4] max-h-[85vh] w-full max-w-xl overflow-hidden rounded-2xl bg-[color:var(--color-graphite)]/40 sm:max-w-2xl lg:max-w-3xl"
+            className="relative aspect-[3/4] max-h-[85vh] w-full max-w-xl overflow-hidden rounded-2xl sm:max-w-2xl lg:max-w-3xl"
             onClick={(e) => e.stopPropagation()}
           >
             {activeItem.image ? (
