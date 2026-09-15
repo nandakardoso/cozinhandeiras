@@ -10,7 +10,7 @@ export const brand = {
   region: "São Paulo e região",
   whatsappNumber: "11 98908-2788",
   whatsappMessage:
-    "Olá! Conheci a Cozinhandeiras pelo site e gostaria de solicitar uma proposta para um evento.",
+    "Olá! Conheci o Cozinhandeiras pelo site e gostaria de solicitar uma proposta para um evento.",
   instagramUrl: "https://www.instagram.com/cozinhandeiraseventos/",
   instagramHandle: "@cozinhandeiraseventos",
   linkedinUrl: "https://www.linkedin.com/company/cozinhandeiras",
@@ -34,7 +34,7 @@ export const hero = {
 export const about = {
   eyebrow: "História da Cozinhandeiras",
   title: "Muito mais do que servir. Criamos experiências.",
-  body: "Há 6 anos no mercado, a Cozinhandeiras é especializada no planejamento e na operação de catering para empresas. Sob a liderança de Patricia Kowalewski, com mais de 20 anos de experiência no segmento de eventos, unimos gastronomia, excelência, gestão estratégica e cuidado para transformar cada encontro em uma experiência memorável.",
+  body: "Há 6 anos no mercado, o Cozinhandeiras é especializado no planejamento e na operação de catering para empresas. Sob a liderança de Patricia Kowalewski, com mais de 20 anos de experiência no segmento de eventos, unimos gastronomia, excelência, gestão estratégica e cuidado para transformar cada encontro em uma experiência memorável.",
   stats: [
     { value: "6 anos", label: "de Cozinhandeiras" },
     { value: "+20 anos", label: "de experiência em eventos" },
@@ -79,25 +79,32 @@ export const differentiators = {
 };
 
 export const clients = [
-  "TOO Seguros / Volkswagen",
-  "Rayes & Fagundes",
-  "IFAZ Filmes / Agência FIXE Eventos",
   "Artesanal Investimentos",
-  "Agência Bonfatti Eventos",
-  "Agência Personic",
+  "Banco Sicredi",
+  "Bonfatti Eventos",
+  "BonifiQ",
+  "CHS Inc.",
   "CRM Bônus",
-  "Capgemini",
-  "Inovabra Habitat",
+  "Delta Academy",
+  "E-commerce Puro",
+  "Essencial",
+  "Fixe Eventos",
+  "Grupo Visagio",
   "Igreja Presbiteriana de Pinheiros",
+  "IFAZ Filmes",
+  "InovaBra Habitat",
+  "Insight Media",
   "Joom Pulse",
   "Misses at Work",
   "Nipro",
+  "Ohio University",
+  "Personic",
   "Prudential Seguros",
-  "Banco Sicredi",
+  "Rayes & Fagundes Advogados",
   "TOTVS",
-  "Universidade de Ohio",
-  "Grupo Visagio",
-  "BonifiQ",
+  "Too Seguros",
+  "Volkswagen",
+  "Youse Seguros",
 ];
 
 export type GalleryItem = {
@@ -203,14 +210,44 @@ export const galleryItems: GalleryItem[] = [
     image: "/images/gallery/mesa-posta-detalhe.jpg",
   },
   {
-    id: "g21",
-    imageAlt: "Colagem de fotos com frutas, doces, salgados, burgers e croissants de evento corporativo",
-    image: "/images/gallery/colagem-buffet-doces-salgados.jpg",
+    id: "g23",
+    imageAlt: "Arranjo floral rústico em vaso de cerâmica com detalhe de salgados ao fundo",
+    image: "/images/gallery/arranjo-floral-detalhe.jpg",
   },
   {
-    id: "g22",
-    imageAlt: "Colagem de fotos com mesa posta, mini burgers, quiches e buffet completo de evento corporativo",
-    image: "/images/gallery/colagem-mesa-posta-buffet.jpg",
+    id: "g24",
+    imageAlt: "Mesa de sucos naturais com arranjo floral e dispensers de limonada e suco de laranja",
+    image: "/images/gallery/mesa-sucos-naturais-flores.jpg",
+  },
+  {
+    id: "g25",
+    imageAlt: "Mesa completa de buffet com arranjo floral, mini burgers, tábua de frios e sucos naturais",
+    image: "/images/gallery/mesa-buffet-completa-flores.jpg",
+  },
+  {
+    id: "g27",
+    imageAlt: "Mini burgers artesanais e mousse com calda de frutas vermelhas em copinhos",
+    image: "/images/gallery/mini-burgers-mousse-framboesa.jpg",
+  },
+  {
+    id: "g28",
+    imageAlt: "Mini burgers, tortinhas de tomate e copinhos de frutas frescas servidos em mesa de evento",
+    image: "/images/gallery/mini-burgers-tortinhas-frutas.jpg",
+  },
+  {
+    id: "g29",
+    imageAlt: "Copinhos de guacamole com nachos servidos em evento ao ar livre",
+    image: "/images/gallery/copos-guacamole-nachos.jpg",
+  },
+  {
+    id: "g30",
+    imageAlt: "Detalhe de dispenser de limonada com hortelã e limão",
+    image: "/images/gallery/dispenser-limonada-detalhe.jpg",
+  },
+  {
+    id: "g26",
+    imageAlt: "Mesa de café da manhã com xícaras brancas e arranjo floral ao fundo",
+    image: "/images/gallery/mesa-cafe-xicaras-flores.jpg",
   },
 ];
 
