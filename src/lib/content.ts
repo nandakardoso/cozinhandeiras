@@ -210,11 +210,6 @@ export const galleryItems: GalleryItem[] = [
     image: "/images/gallery/mesa-sucos-naturais-flores.jpg",
   },
   {
-    id: "g25",
-    imageAlt: "Mesa completa de buffet com arranjo floral, mini burgers, tábua de frios e sucos naturais",
-    image: "/images/gallery/mesa-buffet-completa-flores.jpg",
-  },
-  {
     id: "g27",
     imageAlt: "Mini burgers artesanais e mousse com calda de frutas vermelhas em copinhos",
     image: "/images/gallery/mini-burgers-mousse-framboesa.jpg",
