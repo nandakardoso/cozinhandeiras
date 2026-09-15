@@ -165,11 +165,6 @@ export const galleryItems: GalleryItem[] = [
     image: "/images/gallery/mini-burgers-frango.jpg",
   },
   {
-    id: "g7",
-    imageAlt: "Croissants recheados servidos em travessa de madeira",
-    image: "/images/gallery/croissants-recheados.jpg",
-  },
-  {
     id: "g8",
     imageAlt: "Folhados de queijo servidos em travessa azul",
     image: "/images/gallery/folhados-queijo.jpg",
