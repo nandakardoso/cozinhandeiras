@@ -20,11 +20,18 @@ export function Clients() {
         <div className="group relative mt-8 overflow-hidden border-y border-[color:var(--color-chocolate)]/10 bg-[color:var(--color-offwhite)]/60 py-4 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
           <ul className="flex w-max animate-marquee items-center gap-16 group-hover:[animation-play-state:paused]">
             {[...clients, ...clients].map((client, i) => (
-              <li
-                key={`${client}-${i}`}
-                className="whitespace-nowrap font-heading text-xl text-[color:var(--color-chocolate)]/50 transition-colors hover:text-[color:var(--color-chocolate)]"
-              >
-                {client}
+              <li key={`${client}-${i}`} className="flex items-center gap-16">
+                <span className="whitespace-nowrap font-heading text-xl text-[color:var(--color-chocolate)]/50 transition-colors hover:text-[color:var(--color-chocolate)]">
+                  {client}
+                </span>
+                {i % clients.length === clients.length - 1 && (
+                  <span
+                    aria-hidden="true"
+                    className="text-xl text-[color:var(--color-chocolate)]/30"
+                  >
+                    •
+                  </span>
+                )}
               </li>
             ))}
           </ul>
