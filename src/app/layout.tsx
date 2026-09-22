@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import { seo, brand } from "@/lib/content";
+import { siteUrl } from "@/lib/site";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -14,9 +15,6 @@ const inter = Inter({
   subsets: ["latin"],
   display: "swap",
 });
-
-// Ajuste para o domínio real de produção antes do deploy.
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.cozinhandeiras.com.br";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -43,6 +41,7 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: { google: "2jZ4rO81OLFLH164sXpqk6Qep2NO8KNEbIioMczkZvI" },
 };
 
 const localBusinessJsonLd = {
