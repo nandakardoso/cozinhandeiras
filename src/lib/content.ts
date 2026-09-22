@@ -32,7 +32,7 @@ export const hero = {
 };
 
 export const about = {
-  eyebrow: "História da Cozinhandeiras",
+  eyebrow: "História do Cozinhandeiras",
   title: "Muito mais do que servir. Criamos experiências.",
   body: "Há 6 anos no mercado, o Cozinhandeiras é especializado no planejamento e na operação de catering para empresas. Sob a liderança de Patricia Kowalewski, com mais de 20 anos de experiência no segmento de eventos, unimos gastronomia, excelência, gestão estratégica e cuidado para transformar cada encontro em uma experiência memorável.",
   stats: [
@@ -115,9 +115,9 @@ export type GalleryItem = {
 
 export const galleryItems: GalleryItem[] = [
   {
-    id: "g16",
-    imageAlt: "Mesa completa de buffet com flores rosa, mini burgers, tortinhas e docinhos",
-    image: "/images/gallery/mesa-flores-rosa-completa.jpg",
+    id: "g24",
+    imageAlt: "Mesa de sucos naturais com arranjo floral e dispensers de limonada e suco de laranja",
+    image: "/images/gallery/mesa-sucos-naturais-flores.jpg",
   },
   {
     id: "g12",
@@ -128,11 +128,6 @@ export const galleryItems: GalleryItem[] = [
     id: "g15",
     imageAlt: "Taças de salada de tomate confit em mesa de evento com flores rosa",
     image: "/images/gallery/taca-tomate-confit.jpg",
-  },
-  {
-    id: "g17",
-    imageAlt: "Mesa de buffet com flores rosa, mini burgers, frutas e pão de queijo em detalhe",
-    image: "/images/gallery/mesa-flores-rosa-detalhe.jpg",
   },
   {
     id: "g18",
@@ -153,11 +148,6 @@ export const galleryItems: GalleryItem[] = [
     id: "g3",
     imageAlt: "Bruschettas com tomate confit e alecrim em travessa dourada",
     image: "/images/gallery/bruschetta-tomate-confit.jpg",
-  },
-  {
-    id: "g4",
-    imageAlt: "Espetinhos coloridos de frutas frescas servidos em cesta",
-    image: "/images/gallery/espetinhos-frutas-coloridos.jpg",
   },
   {
     id: "g6",
@@ -190,19 +180,9 @@ export const galleryItems: GalleryItem[] = [
     image: "/images/gallery/quiches-coffee-break.jpg",
   },
   {
-    id: "g20",
-    imageAlt: "Mesa posta com prato, guardanapo, taças de cristal e vela em evento corporativo",
-    image: "/images/gallery/mesa-posta-detalhe.jpg",
-  },
-  {
     id: "g23",
     imageAlt: "Arranjo floral rústico em vaso de cerâmica com detalhe de salgados ao fundo",
     image: "/images/gallery/arranjo-floral-detalhe.jpg",
-  },
-  {
-    id: "g24",
-    imageAlt: "Mesa de sucos naturais com arranjo floral e dispensers de limonada e suco de laranja",
-    image: "/images/gallery/mesa-sucos-naturais-flores.jpg",
   },
   {
     id: "g27",
@@ -295,6 +275,84 @@ export const leadForm = {
     "Obrigada! Recebemos as informações do seu evento. Nossa equipe entrará em contato para entender os detalhes e preparar uma proposta personalizada.",
   detailsPlaceholder:
     "Conte sobre o objetivo do evento, perfil dos convidados, local, horário, restrições alimentares e qualquer outro detalhe importante.",
+};
+
+export const cateringCorporativoPage = {
+  h1: "Catering corporativo em São Paulo",
+  intro:
+    "O Cozinhandeiras é especializado no planejamento e na operação de catering para empresas em São Paulo. Sob a liderança de Patricia Kowalewski, com mais de 20 anos de experiência no segmento de eventos, cuidamos de cada etapa: planejamento do cardápio, gastronomia, ambientação da mesa e operação no dia do evento, com uma rede de parceiros especializados para elevar cada detalhe.",
+  sections: [
+    {
+      title: "Planejamento sob medida",
+      body: "Cada evento é único. O cardápio, o formato de serviço e a ambientação são pensados de acordo com o perfil dos convidados, o propósito do encontro e as particularidades do espaço.",
+    },
+    {
+      title: "Gastronomia e ambientação",
+      body: "A experiência vai além do sabor: cada mesa é montada para harmonizar gastronomia, apresentação e detalhes que tornam o evento corporativo memorável.",
+    },
+    {
+      title: "Equipe e operação",
+      body: "Coordenamos prazos, equipe e fornecedores com a agilidade e a precisão que a dinâmica corporativa exige, para que sua empresa possa se dedicar aos convidados.",
+    },
+  ],
+  eventTypesLabel: "Formatos atendidos",
+  metadata: {
+    title: "Catering Corporativo em São Paulo | Cozinhandeiras",
+    description:
+      "Catering corporativo em São Paulo com gastronomia, ambientação e operação completa para eventos, empresas e experiências corporativas.",
+  },
+};
+
+export const eventosCorporativosPage = {
+  h1: "Catering para eventos corporativos",
+  intro:
+    "Atendemos eventos empresariais de diferentes formatos e propósitos: confraternizações, celebrações, lançamentos, eventos internos, encontros com clientes e experiências que fortalecem a marca de cada empresa.",
+  sections: [
+    {
+      title: "Confraternizações e celebrações",
+      body: "Momentos de reconhecimento e celebração dentro da empresa, com um cardápio e uma ambientação que criam clima de comemoração.",
+    },
+    {
+      title: "Lançamentos e eventos para clientes",
+      body: "Ocasiões em que a marca recebe convidados externos: a gastronomia e a apresentação são pensadas para representar bem a empresa e encantar quem participa.",
+    },
+    {
+      title: "Eventos internos",
+      body: "Reuniões, treinamentos e encontros de equipe também ganham cuidado gastronômico, com formatos que se adaptam à rotina corporativa.",
+    },
+  ],
+  eventTypesLabel: "Tipos de evento atendidos",
+  metadata: {
+    title: "Eventos Corporativos em São Paulo | Cozinhandeiras",
+    description:
+      "Planejamento, gastronomia, ambientação e operação para eventos corporativos em São Paulo.",
+  },
+};
+
+export const coffeeBreakPage = {
+  h1: "Coffee break corporativo em São Paulo",
+  intro:
+    "O coffee break corporativo é um dos formatos mais procurados por empresas em São Paulo para reuniões, treinamentos e convenções. Cuidamos da gastronomia e da apresentação para que o intervalo também seja parte da experiência do evento.",
+  sections: [
+    {
+      title: "Reuniões e treinamentos",
+      body: "Formatos práticos e bem apresentados, pensados para encaixar na rotina de reuniões e treinamentos corporativos.",
+    },
+    {
+      title: "Convenções e eventos maiores",
+      body: "Coffee breaks planejados para acompanhar o ritmo de convenções e eventos corporativos de maior porte, com atenção à operação e ao tempo de serviço.",
+    },
+    {
+      title: "Personalização do cardápio",
+      body: "O cardápio é adaptado ao perfil dos convidados e ao formato do evento, mantendo o cuidado gastronômico que caracteriza o Cozinhandeiras.",
+    },
+  ],
+  eventTypesLabel: "Formatos de coffee break",
+  metadata: {
+    title: "Coffee Break Corporativo em São Paulo | Cozinhandeiras",
+    description:
+      "Coffee break corporativo para empresas, reuniões, treinamentos e eventos em São Paulo, com gastronomia e apresentação cuidadosa.",
+  },
 };
 
 export const seo = {

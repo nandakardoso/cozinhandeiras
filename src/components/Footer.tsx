@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { MessageCircle } from "lucide-react";
 import { brand } from "@/lib/content";
 import { SocialLink } from "@/components/SocialLink";
@@ -23,9 +24,12 @@ export function Footer() {
         <div>
           <Eyebrow tone="champagne">Navegação</Eyebrow>
           <ul className="mt-4 space-y-2 text-sm text-[color:var(--color-offwhite)]/80">
-            <li><a href="#quem-somos" className="hover:text-[color:var(--color-champagne)]">Quem somos</a></li>
-            <li><a href="#galeria" className="hover:text-[color:var(--color-champagne)]">Galeria</a></li>
-            <li><a href="#contato" className="hover:text-[color:var(--color-champagne)]">Contato</a></li>
+            <li><Link href="/catering-corporativo" className="hover:text-[color:var(--color-champagne)]">Catering corporativo</Link></li>
+            <li><Link href="/eventos-corporativos" className="hover:text-[color:var(--color-champagne)]">Eventos corporativos</Link></li>
+            <li><Link href="/coffee-break-corporativo" className="hover:text-[color:var(--color-champagne)]">Coffee break</Link></li>
+            <li><Link href="/quem-somos" className="hover:text-[color:var(--color-champagne)]">Quem somos</Link></li>
+            <li><Link href="/galeria" className="hover:text-[color:var(--color-champagne)]">Galeria</Link></li>
+            <li><Link href="/contato" className="hover:text-[color:var(--color-champagne)]">Contato</Link></li>
           </ul>
         </div>
 
@@ -68,9 +72,9 @@ export function Footer() {
       <div className="border-t border-[color:var(--color-offwhite)]/10 px-6 py-6 text-xs text-[color:var(--color-offwhite)]/60 sm:px-8">
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} {brand.name}. Todos os direitos reservados.</p>
-          <a href="/politica-de-privacidade" className="hover:text-[color:var(--color-champagne)]">
+          <Link href="/politica-de-privacidade" className="hover:text-[color:var(--color-champagne)]">
             Política de privacidade
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

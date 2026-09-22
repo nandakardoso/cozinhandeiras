@@ -2,21 +2,24 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { brand } from "@/lib/content";
+import { isWhatsappConfigured, whatsappHref } from "@/lib/whatsapp";
 import { track } from "@/lib/tracking";
-import { Button, LinkButton } from "@/components/ui/Button";
+import { LinkButton } from "@/components/ui/Button";
 
 const navItems = [
-  { href: "#quem-somos", label: "Quem somos" },
-  { href: "#galeria", label: "Galeria" },
-  { href: "#contato", label: "Contato" },
+  { href: "/quem-somos", label: "Quem somos" },
+  { href: "/galeria", label: "Galeria" },
+  { href: "/contato", label: "Contato" },
 ];
 
 export function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [activeHref, setActiveHref] = useState<string | null>(null);
+  const pathname = usePathname();
 
   useEffect(() => {
     function onScroll() {
@@ -25,29 +28,6 @@ export function Header() {
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  useEffect(() => {
-    const sections = navItems
-      .map((item) => document.getElementById(item.href.slice(1)))
-      .filter((el): el is HTMLElement => el !== null);
-
-    if (sections.length === 0) return;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const mostVisible = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-        if (mostVisible) {
-          setActiveHref(`#${mostVisible.target.id}`);
-        }
-      },
-      { rootMargin: "-45% 0px -45% 0px", threshold: [0, 0.25, 0.5, 0.75, 1] },
-    );
-
-    sections.forEach((section) => observer.observe(section));
-    return () => observer.disconnect();
   }, []);
 
   return (
@@ -59,7 +39,7 @@ export function Header() {
       }`}
     >
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-3 sm:px-8">
-        <a href="#topo" className="flex shrink-0 origin-left items-center" aria-label={brand.name}>
+        <Link href="/" className="flex shrink-0 origin-left items-center" aria-label={brand.name}>
           <Image
             src="/logo-cozinhandeiras.png"
             alt={brand.name}
@@ -70,13 +50,13 @@ export function Header() {
               scrolled ? "scale-[0.72]" : "scale-100"
             }`}
           />
-        </a>
+        </Link>
 
         <nav className="hidden items-center gap-10 md:flex">
           {navItems.map((item) => {
-            const isActive = activeHref === item.href;
+            const isActive = pathname === item.href;
             return (
-              <a
+              <Link
                 key={item.href}
                 href={item.href}
                 className={`group relative py-2 text-[15px] font-medium tracking-wide transition-colors ${
@@ -92,22 +72,22 @@ export function Header() {
                     isActive ? "scale-x-100" : ""
                   }`}
                 />
-              </a>
+              </Link>
             );
           })}
         </nav>
 
         <div className="hidden md:block">
-          <Button
-            onClick={() => {
-              track.clickBudget("header");
-              document.getElementById("contato")?.scrollIntoView({ behavior: "smooth" });
-            }}
+          <LinkButton
+            href={whatsappHref}
+            target={isWhatsappConfigured ? "_blank" : undefined}
+            rel={isWhatsappConfigured ? "noopener noreferrer" : undefined}
+            onClick={() => track.clickBudget("header")}
             className="gap-2 px-6 py-3 text-sm shadow-sm transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-md"
           >
             Solicite seu orçamento
             <ArrowRight size={16} />
-          </Button>
+          </LinkButton>
         </div>
 
         <button
@@ -127,24 +107,30 @@ export function Header() {
         }`}
       >
         <ul className="flex flex-col gap-1 overflow-hidden px-6 py-4">
-          {navItems.map((item) => (
-            <li key={item.href}>
-              <a
-                href={item.href}
-                className={`block rounded-lg px-3 py-3 text-base transition-colors ${
-                  activeHref === item.href
-                    ? "bg-[color:var(--color-chocolate)]/5 text-[color:var(--color-terracotta)]"
-                    : "text-[color:var(--color-graphite)]/80 hover:bg-[color:var(--color-chocolate)]/5"
-                }`}
-                onClick={() => setOpen(false)}
-              >
-                {item.label}
-              </a>
-            </li>
-          ))}
+          {navItems.map((item) => {
+            const isActive = pathname === item.href;
+
+            return (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  className={`block rounded-lg px-3 py-3 text-base transition-colors ${
+                    isActive
+                      ? "bg-[color:var(--color-chocolate)]/5 text-[color:var(--color-terracotta)]"
+                      : "text-[color:var(--color-graphite)]/80 hover:bg-[color:var(--color-chocolate)]/5"
+                  }`}
+                  onClick={() => setOpen(false)}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            );
+          })}
           <li className="mt-2">
             <LinkButton
-              href="#contato"
+              href={whatsappHref}
+              target={isWhatsappConfigured ? "_blank" : undefined}
+              rel={isWhatsappConfigured ? "noopener noreferrer" : undefined}
               className="w-full"
               onClick={() => {
                 setOpen(false);

@@ -2,6 +2,7 @@
 
 import { ArrowRight } from "lucide-react";
 import { hero } from "@/lib/content";
+import { isWhatsappConfigured, whatsappHref } from "@/lib/whatsapp";
 import { track } from "@/lib/tracking";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
@@ -22,11 +23,16 @@ export function Hero() {
             {hero.subheadline}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <LinkButton href="#contato" onClick={() => track.clickBudget("hero")}>
+            <LinkButton
+              href={whatsappHref}
+              target={isWhatsappConfigured ? "_blank" : undefined}
+              rel={isWhatsappConfigured ? "noopener noreferrer" : undefined}
+              onClick={() => track.clickBudget("hero")}
+            >
               {hero.ctaPrimary}
               <ArrowRight size={16} />
             </LinkButton>
-            <LinkButton href="#galeria" variant="secondary">
+            <LinkButton href="/catering-corporativo" variant="secondary">
               {hero.ctaSecondary}
             </LinkButton>
           </div>
