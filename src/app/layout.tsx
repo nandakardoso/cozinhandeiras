@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  verification: { google: "2jZ4rO81OLFLH164sXpqk6Qep2NO8KNEbIioMczkZvI" },
+  verification: { google: "_9XHzB9sHq0O95PTafhfb6-HJx0GAfxBr_Pzz0DRQEo" },
 };
 
 const localBusinessJsonLd = {
