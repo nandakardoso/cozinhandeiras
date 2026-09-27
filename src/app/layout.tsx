@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { seo, brand } from "@/lib/content";
 import { siteUrl } from "@/lib/site";
 import "./globals.css";
@@ -90,6 +91,8 @@ export default function RootLayout({
         />
         {children}
       </body>
+      {/* GA4 só é carregado quando NEXT_PUBLIC_GA_ID está definida (ex.: na Vercel). */}
+      {process.env.NEXT_PUBLIC_GA_ID && <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />}
     </html>
   );
 }

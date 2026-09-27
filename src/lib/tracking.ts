@@ -3,10 +3,13 @@
 // Módulo central de rastreamento. Toda chamada de evento passa por aqui,
 // para que a integração real (GA4 / GTM) seja plugada em um único lugar.
 //
-// Para ativar o Google Tag Manager: adicione o snippet do GTM em
-// src/app/layout.tsx e garanta que `window.dataLayer` exista antes do uso.
-// Para Google Analytics 4 direto: injete o gtag.js em layout.tsx e
-// substitua o corpo de `sendEvent` por `window.gtag("event", name, payload)`.
+// GA4: carregado em src/app/layout.tsx via @next/third-parties quando
+// NEXT_PUBLIC_GA_ID está definida; os eventos vão por `sendGAEvent`.
+// Sem o ID, os eventos continuam no `window.dataLayer` (formato GTM).
+
+import { sendGAEvent } from "@next/third-parties/google";
+
+const gaEnabled = Boolean(process.env.NEXT_PUBLIC_GA_ID);
 
 export type TrackingEvent =
   | "view_service"
@@ -19,20 +22,20 @@ export type TrackingEvent =
 
 type EventPayload = Record<string, string | number | boolean | undefined>;
 
-declare global {
-  interface Window {
-    dataLayer?: Record<string, unknown>[];
-  }
-}
+// `window.dataLayer` já é tipado globalmente por @next/third-parties.
 
 function sendEvent(name: TrackingEvent, payload: EventPayload = {}) {
   if (typeof window === "undefined") return;
 
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({
-    event: name,
-    ...payload,
-  });
+  if (gaEnabled) {
+    sendGAEvent("event", name, payload);
+  } else {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: name,
+      ...payload,
+    });
+  }
 
   if (process.env.NODE_ENV === "development") {
     console.debug("[tracking]", name, payload);
