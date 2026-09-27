@@ -114,6 +114,11 @@ export type GalleryItem = {
 
 export const galleryItems: GalleryItem[] = [
   {
+    id: "g27",
+    imageAlt: "Mini burgers artesanais e mousse com calda de frutas vermelhas em copinhos",
+    image: "/images/gallery/mini-burgers-mousse-framboesa.jpg",
+  },
+  {
     id: "g24",
     imageAlt: "Mesa de sucos naturais com arranjo floral e dispensers de limonada e suco de laranja",
     image: "/images/gallery/mesa-sucos-naturais-flores.jpg",
@@ -159,21 +164,6 @@ export const galleryItems: GalleryItem[] = [
     image: "/images/gallery/mini-burgers-coquetel.jpg",
   },
   {
-    id: "g13",
-    imageAlt: "Mesa com bolo de fubá fatiado, brownies, uvas e taça de frutas em evento corporativo",
-    image: "/images/gallery/buffet-doces-frutas.png",
-  },
-  {
-    id: "g14",
-    imageAlt: "Sanduíches naturais, coxinhas, pão de queijo e mini burgers servidos em bandejas de fibra",
-    image: "/images/gallery/buffet-sanduiches-salgados.png",
-  },
-  {
-    id: "g19",
-    imageAlt: "Mesa completa de buffet com sucos naturais e dispensers de água aromatizada",
-    image: "/images/gallery/mesa-sucos-bebidas.jpg",
-  },
-  {
     id: "g11",
     imageAlt: "Mini quiches dourados servidos em travessa de cristal",
     image: "/images/gallery/quiches-coffee-break.jpg",
@@ -182,11 +172,6 @@ export const galleryItems: GalleryItem[] = [
     id: "g23",
     imageAlt: "Arranjo floral rústico em vaso de cerâmica com detalhe de salgados ao fundo",
     image: "/images/gallery/arranjo-floral-detalhe.jpg",
-  },
-  {
-    id: "g27",
-    imageAlt: "Mini burgers artesanais e mousse com calda de frutas vermelhas em copinhos",
-    image: "/images/gallery/mini-burgers-mousse-framboesa.jpg",
   },
   {
     id: "g28",
