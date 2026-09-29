@@ -68,14 +68,28 @@ async function saveLeadToGoogleSheets(input: LeadInput): Promise<StoredLead> {
     createdAt: new Date().toISOString(),
   };
 
-  const res = await fetch(process.env.GOOGLE_SHEETS_WEBHOOK_URL!, {
+  // O Apps Script executa o doPost na primeira requisição e responde com um
+  // redirect (302) para script.googleusercontent.com, onde fica o JSON de retorno.
+  // O redirect é seguido manualmente com GET, porque seguir automaticamente
+  // pode reenviar o POST e receber 404 do Google.
+  const firstRes = await fetch(process.env.GOOGLE_SHEETS_WEBHOOK_URL!, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       secret: process.env.GOOGLE_SHEETS_WEBHOOK_SECRET || "",
       ...record,
     }),
+    redirect: "manual",
   });
+
+  let res = firstRes;
+  if (firstRes.status >= 300 && firstRes.status < 400) {
+    const location = firstRes.headers.get("location");
+    if (!location) {
+      throw new Error(`Redirect da planilha sem location: ${firstRes.status}`);
+    }
+    res = await fetch(location, { method: "GET" });
+  }
 
   if (!res.ok) {
     throw new Error(`Falha ao gravar lead na planilha: ${res.status} ${await res.text()}`);
