@@ -18,6 +18,7 @@ export default function ContactPage() {
     <>
       <Header />
       <main>
+        <h1 className="sr-only">Contato e orçamento | Cozinhandeiras Buffet</h1>
         <LeadForm />
       </main>
       <Footer />
