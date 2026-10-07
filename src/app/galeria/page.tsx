@@ -18,6 +18,7 @@ export default function GalleryPage() {
     <>
       <Header />
       <main>
+        <h1 className="sr-only">Galeria de eventos | Cozinhandeiras Buffet</h1>
         <Gallery />
       </main>
       <Footer />
